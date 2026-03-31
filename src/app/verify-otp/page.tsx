@@ -232,7 +232,7 @@ export default function VerifyOtpPage() {
         <p className="mt-4 text-center font-figma-copy text-[1.35rem] text-[var(--figma-ink-soft)]">
           {isLoading
             ? "Preparing verification..."
-            : `Enter the 6-digit code we sent to ${pendingRegistration?.email ?? "your email"}.`}
+            : `Enter the 6-digit code we sent to ${pendingRegistration?.email ?? "your email"}`}
         </p>
 
         {!isLoading && pendingRegistration?.otpExpiresAt ? (
